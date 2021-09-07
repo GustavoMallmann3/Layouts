@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+    font-size: 16px;
+    color: #232323;
+    background-color: #f2cd5e;
+    padding: 20px 100px 100px 100px;
+}
+
+#main {
+    grid-template-rows: 30vh 50vh   ;
+    grid-gap: 5px 5px;
+    padding: 5px;
+    background-color: #1f4774;
+    display: grid;
+    height: 100%;
+    grid-template-areas: "header nav" "content aside" 
+    
+
+
+
+
+}
+
+#testmaisTela{
+    grid-template-rows:  23.5vh 24vh    ;
+    grid-gap: 5px 5px;
+   padding: 5px;
+    
+    display: grid;
+   
+    grid-template-areas: "nav nav" "content aside" 
+    
+
+}
+
+.mainHeader {
+    grid-area:header; 
+    background-color: white;
+   
+}
+.mainNav {
+    grid-area:nav; 
+    background-color: white;
+    
+     
+}
+.mainContent {
+    grid-area:content; 
+    background-color: white;
+    
+     
+}
+.mainAside {
+    padding: 15px;
+    grid-area:aside;
+    background-color: rgb(0, 0, 0);
+     
+     
+}
+
+.mainNav2 {
+    grid-area:nav; 
+    background-color: rgb(255, 255, 255);
+    
+     
+}
+.mainTest {
+    grid-area:content; 
+    background-color: rgb(255, 255, 255);
+    
+     
+}
+.mainTest2 {
+    grid-area:aside;
+    background-color: rgb(255, 255, 255);
+     
+     
+}
+
+
+@media screen and (max-width: 768px) {
+    body{
+        background-color: #cdcdcd;
+        
+    }
+
+    #main{
+        grid-template-areas: "header" "content" "aside" "footer";
+
+    }
+
+    .mainNav{
+        grid-area: header;
+        margin-top: 40px;
+        background-color: red;
+    }
+    
+}

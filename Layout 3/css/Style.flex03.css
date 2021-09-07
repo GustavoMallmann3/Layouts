@@ -1,0 +1,57 @@
+*   {
+        padding: 0;
+        margin: 0;
+    }
+    body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 16px;
+        color: #232323;
+        background-color: rgb(177, 76, 207);
+        padding: 20px 100px 100px 100px;
+    }
+
+    #conteudo {
+        background-color: #1f4774;
+        height: 100%;
+        padding: 5px;
+    }
+
+    #conteudo2 {
+        background-color: #000000;
+
+        padding: 5px;
+    }
+
+    .item {
+        background-color: white;
+
+        width: auto;
+        height: 100px;
+
+    }
+
+    #duas {
+        flex-direction: row;
+        display: flex;
+        width: auto;
+    }
+
+    @media screen and (max-width: 768px) {
+        body {
+            background-color: #cdcdcd;
+
+        }
+
+        #conteudo {
+            grid-template-areas: "header""content""aside""footer";
+
+        }
+
+        #mainNav {
+            grid-area: header;
+            margin-top: 40px;
+            background-color: red;
+        }
+
+
+    }
